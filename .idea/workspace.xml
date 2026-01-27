@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bd61d37-0710-4f8d-b34f-eea71d5ac86a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab/app/src/main/java/com/example/a171lablearnandroid/MainActivity2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
