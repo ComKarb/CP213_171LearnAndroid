@@ -4,32 +4,34 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.benchmark.traceprocessor.Row
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.a171lablearnandroid.ui.theme._171LabLearnAndroidTheme
+import com.example.a171lablearnandroid.utils.SharedPreferencesUtil
 
-class MainActivity2 : ComponentActivity() {
+class SharePreferencesActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        SharedPreferencesUtil.init(this)
+        // การบันทึกค่า (เช่น เมื่อกดปุ่ม Save)
+        SharedPreferencesUtil.saveString("user_name", "Phumipat")
+        SharedPreferencesUtil.saveBoolean("is_dark_mode", true)
+
+// การดึงค่ามาใช้งาน (เช่น เมื่อเปิดแอพขึ้นมาใหม่)
+        val name = SharedPreferencesUtil.getString("user_name")
+        val darkMode = SharedPreferencesUtil.getBoolean("is_dark_mode")
         enableEdgeToEdge()
         setContent {
             _171LabLearnAndroidTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting2(
-                        name = "Android2",
+                    Greeting(
+                        name = name,
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -39,27 +41,17 @@ class MainActivity2 : ComponentActivity() {
 }
 
 @Composable
-fun Greeting2(name: String, modifier: Modifier = Modifier) {
-    var inputText by remember { mutableStateOf(value="") }
-    Column{
-        Text(
-        text = "Hello $name! say = "+inputText,
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
         modifier = modifier
     )
-        TextField(
-            value = inputText,
-            onValueChange = {
-                inputText = it
-            }
-        )
-    }
-
 }
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview2() {
+fun GreetingPreview3() {
     _171LabLearnAndroidTheme {
-        Greeting2("Android")
+        Greeting("Android")
     }
 }

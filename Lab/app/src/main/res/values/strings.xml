@@ -2,4 +2,7 @@
     <string name="app_name">171LabLearnAndroid</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_share_preferences">SharePreferencesActivity</string>
+    <string name="title_activity_pokemon_view_model">PokemonViewModel</string>
 </resources>
