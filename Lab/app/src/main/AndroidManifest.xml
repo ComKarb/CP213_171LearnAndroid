@@ -24,6 +24,10 @@
             android:label="@string/title_activity_part10"
             android:theme="@style/Theme._171LabLearnAndroid" />
         <activity
+            android:name=".Part11Activity"
+            android:exported="false"
+            android:theme="@style/Theme._171LabLearnAndroid" />
+        <activity
             android:name=".Part9Activity"
             android:exported="false"
             android:theme="@style/Theme._171LabLearnAndroid" />
