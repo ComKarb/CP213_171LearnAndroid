@@ -73,6 +73,13 @@ class MenuActivity : ComponentActivity() {
                 }) {
                     Text(text = "SensorActivity")
                 }
+                Button(onClick = {
+                    startActivity(
+                        Intent(this@MenuActivity, Part1AnimationActivity::class.java)
+                    )
+                }) {
+                    Text(text = "Part1AnimationActivity")
+                }
             }
         }
     }
