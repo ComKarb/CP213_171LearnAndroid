@@ -177,6 +177,15 @@ class MenuActivity : ComponentActivity() {
                             Text(text = "Part9Activity (Collapsing Toolbar)")
                         }
                     }
+
+                    item {
+                        Button(onClick = {
+                            val options = ActivityOptionsCompat.makeBasic()
+                            startActivity(Intent(this@MenuActivity, Part10Activity::class.java), options.toBundle())
+                        }) {
+                            Text(text = "Part10Activity (Glance App Widget)")
+                        }
+                    }
                 }
             }
         }
