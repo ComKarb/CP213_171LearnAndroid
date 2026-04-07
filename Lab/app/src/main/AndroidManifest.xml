@@ -19,6 +19,14 @@
         android:theme="@style/Theme._171LabLearnAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".Part6Activity"
+            android:exported="false"
+            android:theme="@style/Theme._171LabLearnAndroid" />
+        <activity
+            android:name=".Part5Activity"
+            android:exported="false"
+            android:theme="@style/Theme._171LabLearnAndroid" />
+        <activity
             android:name=".Part4Activity"
             android:exported="false"
             android:label="@string/title_activity_part4"
