@@ -159,6 +159,15 @@ class MenuActivity : ComponentActivity() {
                             Text(text = "Part6Activity (Clip Reveal Top-Left)")
                         }
                     }
+
+                    item {
+                        Button(onClick = {
+                            val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this@MenuActivity)
+                            startActivity(Intent(this@MenuActivity, Part8Activity::class.java), options.toBundle())
+                        }) {
+                            Text(text = "Part8Activity (Scene Transition Auto)")
+                        }
+                    }
                 }
             }
         }
