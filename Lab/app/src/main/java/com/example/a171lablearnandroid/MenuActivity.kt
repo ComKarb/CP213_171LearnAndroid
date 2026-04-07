@@ -195,6 +195,15 @@ class MenuActivity : ComponentActivity() {
                             Text(text = "Part11Activity (Skeleton Loading)")
                         }
                     }
+
+                    item {
+                        Button(onClick = {
+                            val options = ActivityOptionsCompat.makeBasic()
+                            startActivity(Intent(this@MenuActivity, Part12Activity::class.java), options.toBundle())
+                        }) {
+                            Text(text = "Part12Activity (Modal Bottom Sheet & Dialog)")
+                        }
+                    }
                 }
             }
         }

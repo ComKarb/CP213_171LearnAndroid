@@ -28,6 +28,10 @@
             android:exported="false"
             android:theme="@style/Theme._171LabLearnAndroid" />
         <activity
+            android:name=".Part12Activity"
+            android:exported="false"
+            android:theme="@style/Theme._171LabLearnAndroid" />
+        <activity
             android:name=".Part9Activity"
             android:exported="false"
             android:theme="@style/Theme._171LabLearnAndroid" />
