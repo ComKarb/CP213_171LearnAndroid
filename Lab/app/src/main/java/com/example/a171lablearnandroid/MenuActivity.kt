@@ -168,6 +168,15 @@ class MenuActivity : ComponentActivity() {
                             Text(text = "Part8Activity (Scene Transition Auto)")
                         }
                     }
+
+                    item {
+                        Button(onClick = {
+                            val options = ActivityOptionsCompat.makeBasic()
+                            startActivity(Intent(this@MenuActivity, Part9Activity::class.java), options.toBundle())
+                        }) {
+                            Text(text = "Part9Activity (Collapsing Toolbar)")
+                        }
+                    }
                 }
             }
         }
